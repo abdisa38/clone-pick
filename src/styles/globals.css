@@ -132,7 +132,10 @@
 
   /* Premium Glass Card */
   .glass-card {
-    @apply glass;
+    background: var(--color-bg-glass);
+    backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid var(--color-border);
+    border-radius: var(--card-radius);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -198,18 +201,18 @@
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
     animation: shimmer 2s infinite;
   }
+}
 
-  /* Focus Visible */
-  *:focus-visible {
-    outline: 2px solid var(--color-accent-primary);
-    outline-offset: 2px;
-  }
+/* Focus Visible */
+*:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 2px;
+}
 
-  /* Button Reset */
-  button {
-    font-family: inherit;
-    cursor: pointer;
-  }
+/* Button Reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
 
 /* ═══════════════════════════════════════
