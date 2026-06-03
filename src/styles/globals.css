@@ -65,7 +65,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--color-border);
   }
 
   html {
@@ -73,7 +73,8 @@
   }
 
   body {
-    @apply bg-bg-primary text-text-primary;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
     font-family: 'General Sans', system-ui, sans-serif;
     font-size: var(--text-body);
     line-height: 1.6;
